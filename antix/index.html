@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="https://example.com/antix/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>antiX - MkLorum</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "antiX";
+    var mkdocs_page_input_path = "antix.md";
+    var mkdocs_page_url = "/antix/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> MkLorum</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../mkdocs/">mkdocs</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">antiX</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#download-the-iso-file">Download the ISO file</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#verify-the-integrity-of-the-iso-file">Verify the integrity of the ISO file</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#verify-md5sum">Verify md5sum</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#verify-sha256sum">Verify sha256sum</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#verify-the-signature">Verify the signature</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#create-a-bootable-usb-stick-from-the-iso">Create a bootable USB stick from the ISO</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#references-and-resources">References and resources</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#misc">Misc</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">MkLorum</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>antiX</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="antix-installation-procedure">antiX installation procedure</h1>
+<p>Here is the way to install antiX Linux. The procedure below was used on the 31st of December 2022</p>
+<h2 id="download-the-iso-file">Download the ISO file</h2>
+<p><a href="https://antixlinux.com/download/">Download site</a></p>
+<p>For the X86 32 bits version: antiX-21_386-full.iso</p>
+<h2 id="verify-the-integrity-of-the-iso-file">Verify the integrity of the ISO file</h2>
+<p>Download the checksum and signature files</p>
+<ul>
+<li>antiX-21_386-full.iso.md5</li>
+<li>antiX-21_386-full.iso.sha256</li>
+<li>antiX-21_386-full.iso.sig</li>
+</ul>
+<h3 id="verify-md5sum">Verify md5sum</h3>
+<p><code>md5sum antiX-19.2.1_x64-base.iso</code></p>
+<h3 id="verify-sha256sum">Verify sha256sum</h3>
+<p><code>sha256sum antiX-19.2.1_x64-base.iso</code></p>
+<h3 id="verify-the-signature">Verify the signature</h3>
+<p>Import the public developer's key</p>
+<p><code>gpg --keyserver hkp://keys.openpgp.org --recv-keys A80582E000067FDD</code></p>
+<p>The key server where to find the developer's public key is <a href="hkp://keys.openpgp.org">hkp://keys.openpgp.org</a></p>
+<p>IDs of developer's pulic key can be found at <a href="https://mxlinux.org/wiki/system/signed-iso-files/">https://mxlinux.org/wiki/system/signed-iso-files/</a>. ID <em>A80582E000067FDD</em> was used in the command above</p>
+<p>Verify the ISO signature</p>
+<p><code>gpg --verify antiX-21_386-full.iso.sig antiX-21_386-full.iso</code></p>
+<p>Output looks like:</p>
+<pre><code class="language-bash">gpg: Signature made Sun 31 Dec 2021 08:52:05 PM IST
+gpg:                using RSA key 30AA418A0C723D937B50A986A80582E000067FDD
+gpg: Good signature from &quot;anticapitalista &lt;antiX@operamail.com&gt;&quot; (unknown)
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 30AA 418A 0C72 3D93 7B50  A986 A805 82E0 0006 7FDD
+</code></pre>
+<h2 id="create-a-bootable-usb-stick-from-the-iso">Create a bootable USB stick from the ISO</h2>
+<p>Check the devices</p>
+<p><code>lsblk</code></p>
+<p>Write the USB key</p>
+<pre><code>sudo dd if=antiX-21_386-full.iso of=/dev/sdc conv=fsync status=progress
+</code></pre>
+<h2 id="references-and-resources">References and resources</h2>
+<p><a href="https://www.antixforum.com/forums/topic/step-by-step-guide-to-install-antix-os/">Old procedure to install antiX</a> It also gives some information on antiX Linux.</p>
+<p><a href="https://forum.mxlinux.org/viewtopic.php?t=60143">GPG Signing Issue MX 19.2</a></p>
+<p><a href="https://forum.mxlinux.org/viewtopic.php?t=55617">GPG Key antiX-17.4.1_386-full</a></p>
+<p><a href="https://antixlinux.com/forum-archive/signed-iso-files-t6287.html">Signed iso files</a></p>
+<p><a href="http://download.tuxfamily.org/antix/docs-antiX-19/live-boot/index.html">Live CD/USB Guide</a> </p>
+<p><a href="https://www.aplawrence.com/Basics/gpg.html">Open PGP</a> </p>
+<h2 id="misc">Misc</h2>
+<p><a href="https://embeddedinventor.com/mx-linux-vs-antix-similarities-differences/">what's the difference between MX linux and antiX?</a></p>
+<p><a href="https://antixlinux.com/">antiX Linux website</a> </p>
+<p><a href="https://mxlinux.org/">MX Linux website</a></p>
+<p><a href="https://forum.mxlinux.org/">MX Linux forum</a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../mkdocs/" class="btn btn-neutral" title="mkdocs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../mkdocs/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
